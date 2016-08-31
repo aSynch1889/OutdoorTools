@@ -10,11 +10,11 @@
 		00DDC0B31D751EA60040BFDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DDC0B21D751EA60040BFDC /* main.m */; };
 		00DDC0B61D751EA60040BFDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DDC0B51D751EA60040BFDC /* AppDelegate.m */; };
 		00DDC0B91D751EA60040BFDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DDC0B81D751EA60040BFDC /* ViewController.m */; };
-		00DDC0BC1D751EA60040BFDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DDC0BA1D751EA60040BFDC /* Main.storyboard */; };
 		00DDC0BE1D751EA60040BFDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DDC0BD1D751EA60040BFDC /* Assets.xcassets */; };
 		00DDC0C11D751EA60040BFDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DDC0BF1D751EA60040BFDC /* LaunchScreen.storyboard */; };
 		00DDC0CC1D751EA60040BFDC /* OutdoorToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DDC0CB1D751EA60040BFDC /* OutdoorToolsTests.m */; };
 		00DDC0D71D751EA60040BFDC /* OutdoorToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DDC0D61D751EA60040BFDC /* OutdoorToolsUITests.m */; };
+		00DDC0E91D752EC80040BFDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DDC0E81D752EC80040BFDC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		00DDC0B51D751EA60040BFDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		00DDC0B71D751EA60040BFDC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		00DDC0B81D751EA60040BFDC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		00DDC0BB1D751EA60040BFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00DDC0BD1D751EA60040BFDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00DDC0C01D751EA60040BFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00DDC0C21D751EA60040BFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		00DDC0D21D751EA60040BFDC /* OutdoorToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutdoorToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DDC0D61D751EA60040BFDC /* OutdoorToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutdoorToolsUITests.m; sourceTree = "<group>"; };
 		00DDC0D81D751EA60040BFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00DDC0E81D752EC80040BFDC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 				00DDC0B51D751EA60040BFDC /* AppDelegate.m */,
 				00DDC0B71D751EA60040BFDC /* ViewController.h */,
 				00DDC0B81D751EA60040BFDC /* ViewController.m */,
-				00DDC0BA1D751EA60040BFDC /* Main.storyboard */,
+				00DDC0E81D752EC80040BFDC /* Main.storyboard */,
 				00DDC0BD1D751EA60040BFDC /* Assets.xcassets */,
 				00DDC0BF1D751EA60040BFDC /* LaunchScreen.storyboard */,
 				00DDC0C21D751EA60040BFDC /* Info.plist */,
@@ -207,6 +207,11 @@
 				TargetAttributes = {
 					00DDC0AD1D751EA60040BFDC = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					00DDC0C61D751EA60040BFDC = {
 						CreatedOnToolsVersion = 7.3;
@@ -243,9 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DDC0E91D752EC80040BFDC /* Main.storyboard in Resources */,
 				00DDC0C11D751EA60040BFDC /* LaunchScreen.storyboard in Resources */,
 				00DDC0BE1D751EA60040BFDC /* Assets.xcassets in Resources */,
-				00DDC0BC1D751EA60040BFDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		00DDC0BA1D751EA60040BFDC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00DDC0BB1D751EA60040BFDC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		00DDC0BF1D751EA60040BFDC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -416,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OutdoorTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aihua.OutdoorTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OutdoorTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aihua.OutdoorTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
