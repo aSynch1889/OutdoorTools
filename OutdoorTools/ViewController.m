@@ -76,7 +76,9 @@
         
     }];
     //TODO: 获取温度，风速，日出，日落时间等需要天气API接口获取
+    
     //TODO: 顶部的地图视图使用原生的即可
+    
     if (location != nil) {
         [_locationManager stopUpdatingLocation];
     }
